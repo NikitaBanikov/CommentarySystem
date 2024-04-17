@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CommentarySystem</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="commentary-system">
+        <div class="header">
+            <div class="header-block">
+                <p class="header-block__text">Комментарии</p>
+                <span class="header-block__quantity">(80)</span>
+            </div>
+            <div class="header-block">
+                <p class="header-block__text">По количеству оценок</p>
+                <img src="../images/svg/треугольник.svg" alt="треугольник" class="estimates-img" id="triangle">
+            </div>
+            <div class="unfolding-list unfold">
+                <div class="unfolding-list__item">
+                    <img src="" class="unfolding-list__item-img">
+                    <span class="unfolding-list__item-text">По дате</span>
+                </div>
+                <div class="unfolding-list__item">
+                    <img src="" class="unfolding-list__item-img">
+                    <span class="unfolding-list__item-text">По количеству оценок</span>
+                </div>
+                <div class="unfolding-list__item">
+                    <img src="" class="unfolding-list__item-img">
+                    <span class="unfolding-list__item-text">По актуальности</span>
+                </div>
+                <div class="unfolding-list__item">
+                    <img src="" class="unfolding-list__item-img">
+                    <span class="unfolding-list__item-text">По количеству ответов</span>
+                </div>
+            </div>
+            <div class="header-block">
+                <p class="header-block__text">Избранное</p>
+                <img src="../images/svg/сердечко.svg" alt="сердечко в кружке" class="favorite-img">
+            </div>
+        </div>
+        <div class="user-comment-container">
+            <img src="" alt="фото пользователя" class="user-comment__img">
+            <div class="user-comment__input-container">
+                    <span class="username"></span>
+                    <span class="symbols-limit">Макс. 1000 символов</span>
+                <textarea placeholder="Введите текст сообщения..." id="user-comment__textarea" cols="30" rows="10"></textarea>
+            </div>
+            <button class="send-button">Отправить</button>
+        </div>
+        <div id="comments-container">
+            <div class="comment-wrapper">
+                <!--Комментарий-->
+                <div class="comment-block">
+                    <img src="../images/png/алексей.png" alt="Алексей" class="user-comment__img">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">Алексей_1994b</span>
+                            <span class="date">15.01 13:55</span>
+                        </div>
+                        <p class="comment-text">Самое обидное когда сценарий по сути есть - в виде книг, где нет сюжетных дыр, всё логично, стройное повествование и достаточно взять и экранизировать оригинал как это было в первых фильмах с минимальным количеством отсебятины и зритель с восторгом примет любой такой фильм и сериал, однако вместо этого 'Кольца власти' просто позаимствовали имена из оригинала, куски истории, мало связанные между собой и выдали очередной среднячковый сериал на один раз в лучшем случае.</p>
+                        <div class="comment-footer">
+                            <div class="respond-block">
+                                <img src="../images/svg/respond-arrow.svg" alt="стрелка влево" class="respond-img">
+                                <span class="respond-text">Ответить</span>
+                            </div>
+                            <div class="favorite-block">
+                                <img src="../images/svg/hollow-heart.svg" alt="пустое сердечко" class="favorite-img">
+                                <span class="favorite-text">В избранное</span>
+                            </div>
+                            <div class="rating-block">
+                                <img src="../images/svg/rating-button_decrease.svg" alt="кружок с минусом" class="rating-button_decrease">
+                                <span class="rating-number">0</span>
+                                <img src="../images/svg/rating-button_increase.svg" alt="кружок с плюсом" class="rating-button_increase">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Ответ на комментарий-->
+                <div class="respond-comment-wrapper">
+                    <img src="../images/png/джунбокс.png" alt="джунбокс" class="user-comment__img">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">Джунбокс3000</span>
+                            <img src="../images/svg/respond-arrow.svg" alt="стрелка влево">
+                            <span class="answered-comment__username">Алексей_1994b</span>
+                            <span class="date">15.01 15:18</span>
+                        </div>
+                        <p class="comment-text">Наверное, самая большая ошибка создателей сериала была в том, что они поставили уж слишком много надежд на поддержку фанатов вселенной. Как оказалось на деле, большинство 'фанатов' с самой настоящей яростью и желчью стали уничтожать сериал, при этом объективности в отзывах самый минимум.</p>
+                        <div class="comment-footer">
+                            <div class="favorite-block">
+                                <img src="../images/svg/hollow-heart.svg" alt="пустое сердечко" class="favorite-img">
+                                <span class="favorite-text">В избранное</span>
+                            </div>
+                            <div class="rating-block">
+                                <img src="../images/svg/rating-button_decrease.svg" alt="кружок с минусом" class="rating-button_decrease">
+                                <span class="rating-number">0</span>
+                                <img src="../images/svg/rating-button_increase.svg" alt="кружок с плюсом" class="rating-button_increase">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>
